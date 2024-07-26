@@ -4,6 +4,9 @@
 
 <ul>
     <li><a href="docs/item1.md">생성자 대신 정적 팩터리 메서드를 고려하라</a></li>
+    <br>
     <li><a href="docs/item2.md">생성자에 매개변수가 많다면 빌더를 고려하라</a></li>
+    <br>
+    <li><a href="docs/item3.md">private 생성자나 열거타입으로 싱글턴임을 보증하라</a></li>
 </ul>
 
