@@ -2,7 +2,7 @@
 
 https://docs.oracle.com/javase/tutorial/java/generics/erasure.html
 
-<a href="src/typeerasure">예제코드</a>
+<a href="../src/typeerasure">예제코드</a>
 
 제네릭은 자바언어에서 컴파일시간에 더욱 엄격한 타입 검사를 제공하기 위한것으로 소개되었다.
 
