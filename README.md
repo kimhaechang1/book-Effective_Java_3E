@@ -15,6 +15,10 @@
 
 <ul>
     <li><a href="docs/java_docs_type_erasure_with_bridge_method.md">제네릭 타입소거와 브릿지 메소드</a></li>
+    <br>
     <li><a href="docs/java_capture_of.md">제네릭 Wildcard Capture</a></li>
+    <br>
     <li><a href="docs/item26.md">Raw 타입은 사용하지 말라</a></li>
+    <br>
+    <li><a href="docs/item28.md">배열 보다는 리스트를 사용하라</a></li>
 </ul>
