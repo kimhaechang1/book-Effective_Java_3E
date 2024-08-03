@@ -21,4 +21,8 @@
     <li><a href="docs/item26.md">Raw 타입은 사용하지 말라</a></li>
     <br>
     <li><a href="docs/item28.md">배열 보다는 리스트를 사용하라</a></li>
+    <br>
+    <li><a href="docs/item30.md">이왕이면 제네릭 메서드로 만들라</a></li>
+    <br>
+    <li><a href="docs/item31.md">한정적 와일드카드를 사용해 API 유연성을 높이라</a></li>
 </ul>
