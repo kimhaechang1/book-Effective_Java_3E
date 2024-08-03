@@ -25,4 +25,8 @@
     <li><a href="docs/item30.md">이왕이면 제네릭 메서드로 만들라</a></li>
     <br>
     <li><a href="docs/item31.md">한정적 와일드카드를 사용해 API 유연성을 높이라</a></li>
+    <br>
+    <li><a href="docs/item32.md">제네릭과 가변인수를 함께 쓸 때는 신중하라.</a></li>
+    <br>
+    <li><a href="docs/item33.md">타입 안전 이종 컨테이너를 고려하라.</a></li>
 </ul>
