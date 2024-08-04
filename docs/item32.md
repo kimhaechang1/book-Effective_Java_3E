@@ -91,6 +91,48 @@ public static void main(String[] args) {
 
 그 결과 `Object`배열은 `String`배열의 하위타입이 아니기에 `ClassCastException`이 발생한다.
 
+자세하게 알아보자면 만약 두 메서드에서 `toArray`를 바로사용하는것은 문제가 되지 않는데, 이유는 `T`타입이 컴파일러가 뭔지 추론하여 `String` 배열을 준비하기 때문이다.
+
+그래서 결과적으로 `toArray`가 가변인수 배열로 생성하는 `Object[]`에 `String[]`을 대입하여 작업하고 `Object[]`를 반환하더라도, 그 인스턴스인 `String[]`이 유지되므로 `String[]`으로의 캐스팅이 문제가 되지 않는다.
+
+하지만 `pickTwo`메소드 에서 `toArray()`를 호출하는경우는 `pickTwo`입장에서는 추론상 `String`인걸 인지하고 있다. 
+
+이걸 뭐 별다른 캐스팅이 필요하지 않기에, 타입소거에 의해 `Object[] pickTwo(Object a, Object b, Object c)`로 인지하게 된다.
+
+즉, a와 b와 c는 각각 `Object object = new String()`인 셈으로 대입되어 있다.
+
+하지만 이들의 인스턴스가 `String`일 뿐이지 타입은 `Object`이다. 따라서 `toArray()`메소드 입장에서는 `Object[]`배열을 준비하게 되고
+
+내부적으로는 `Object[] objects = new Object[]{a, b}`로서 사용하게 될 것이다.
+
+그러면 `objects` 내부의 원소 a, b는 `String` 타입이겠지만, `Objects` 자체는 구체적인 타입으로 `Object[]`이기에 `String[]`으로 캐스팅 할 수없다.
+
+물론 이거는 어디까지나 가변인수 배열의 생성방식이 문제가 된다. 어떤것이 문제냐? 타입을 추론하고 수용할 수 있는 타입에 대해서 배열을 새롭게 만들어내는것이다.
+
+그래서 아래의 코드는 실행된다.
+
+```java
+static <T> T get(T t){
+    return another(t);
+}
+
+static <T> T another(T t){
+    return t;
+}
+
+public static void main(String[] args) {
+    String str = get("김회창");
+    // 차근차근 생각해보자
+    // 우선 소거가 되면서 위의 메소드들이야 뭐 T가 전부 Object가 될것이다.
+    // 그러고 String이 넣은상황은 사실상 
+    // Object t = new String()
+    // Object anotherT = t; 
+    // 로 해석이 되고
+    // 끝까지 인스턴스는 new String()으로 변화가 없다.
+    // 따라서 str로의 대입에 대해서 추론상 (String) 캐스팅을 해주고 실제 런타임에서도 문제가 없다.
+}
+```
+
 그럼 무조건적으로 가변인수를 다른 메소드에 사용하면 안되는걸까?
 
 두가지 예외사항이 있다.
