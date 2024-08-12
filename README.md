@@ -14,6 +14,10 @@
     <li><a href="docs/item6.md">불필요한 객체 생성을 피하라</a></li>
     <br>
     <li><a href="docs/item7.md">다 쓴 객체 참조를 해제하라</a></li>
+    <br>
+    <li><a href="docs/item8.md">finalizer와 cleaner 사용을 피하라</a></li>
+    <br>
+    <li><a href="https://devhc.tistory.com/16">try-finally 보다는 try-with-resources를 사용해라</a></li>
 </ul>
 
 
