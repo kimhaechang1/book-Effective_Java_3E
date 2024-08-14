@@ -20,6 +20,8 @@
     <li><a href="https://devhc.tistory.com/16">try-finally 보다는 try-with-resources를 사용해라</a></li>
     <br>
     <li><a href="docs/item10.md">equals는 일반 규약을 지켜 재정의 하라</a></li>
+    <br>
+    <li><a href="docs/item11.md">equals를 재정의하려거든 hashCode도 재정의하라</a></li>
 </ul>
 
 
