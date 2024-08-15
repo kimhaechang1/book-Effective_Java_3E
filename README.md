@@ -18,7 +18,11 @@
     <li><a href="docs/item8.md">finalizer와 cleaner 사용을 피하라</a></li>
     <br>
     <li><a href="https://devhc.tistory.com/16">try-finally 보다는 try-with-resources를 사용해라</a></li>
-    <br>
+</ul>
+
+## Chapter 3 모든 객체의 공통 메서드
+
+<ul>
     <li><a href="docs/item10.md">equals는 일반 규약을 지켜 재정의 하라</a></li>
     <br>
     <li><a href="docs/item11.md">equals를 재정의하려거든 hashCode도 재정의하라</a></li>
