@@ -27,7 +27,7 @@
     <br>
     <li><a href="docs/item11.md">equals를 재정의하려거든 hashCode도 재정의하라</a></li>
     <br>
-    <li><a href="docs/item12.md">clone 재정의는 주의해서 진행하라</a></li>
+    <li><a href="docs/item13.md">clone 재정의는 주의해서 진행하라</a></li>
 </ul>
 
 
