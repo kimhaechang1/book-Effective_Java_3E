@@ -28,6 +28,16 @@
     <li><a href="docs/item11.md">equals를 재정의하려거든 hashCode도 재정의하라</a></li>
     <br>
     <li><a href="docs/item13.md">clone 재정의는 주의해서 진행하라</a></li>
+    <br>
+    <li><a href="docs/item14.md">Comparable을 구현할지 고려하라</a></li>
+</ul>
+
+## Chapter 4 클래스와 인터페이스
+
+<ul>
+    <li><a href="docs/item15.md">클래스와 멤버의 접근을 최소화하라</a></li>
+    <br>
+
 </ul>
 
 
