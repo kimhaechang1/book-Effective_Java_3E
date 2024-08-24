@@ -92,7 +92,7 @@ public void flip(int bitIndex) {
 이러한 부분에 대해서 불변 객체는 내부적으로 가변 동반 클래스를 `package-private`으로 제공하는 경우가 있다.
 
 ```
-MutableBitInteger 같은 경우가 가변 동반 클래스이다.
+MutableBigInteger 같은 경우가 가변 동반 클래스이다.
 ```
 
 클라이언트들의 복잡한 연산에 있어서 매순간 위의 `flipBit`처럼 새 할당을 하고있으면 속도가 매우 느리기 때문이다.
