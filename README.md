@@ -38,6 +38,8 @@
     <li><a href="docs/item15.md">클래스와 멤버의 접근을 최소화하라</a></li>
     <br>
     <li><a href="docs/item17.md">변경 가능성을 최소화하라</a></li>
+    <br>
+    <li><a href="docs/item18.md">상속보다는 컴포지션을 사용하라</a></li>
 </ul>
 
 
