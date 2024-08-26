@@ -100,7 +100,7 @@ Super와 Sub 클래스를 설계하고 사용하는 클라이언트 입장에서
 
 이들 메소드도 사실상 내부적으로 생성자를 호출하는듯이 새로운 인스턴스를 만들기 때문이다. <a href="./item13.md">Item 13</a>
 
-Serializable의 경우 싱글톤이 깨지는 케이스에서 readResolve() 를 써야함을 느꼇을 것이다. <a href="./itme3.md">Item 3</a>
+Serializable의 경우 싱글톤이 깨지는 케이스에서 readResolve() 를 써야함을 느꼇을 것이다. <a href="./item3.md">Item 3</a>
 
 writeReplace()는 재정의 하는경우 해당 메소드의 반환타입이 실제로 직렬화 된다. 
 
