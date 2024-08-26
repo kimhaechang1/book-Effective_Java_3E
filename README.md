@@ -40,6 +40,8 @@
     <li><a href="docs/item17.md">변경 가능성을 최소화하라</a></li>
     <br>
     <li><a href="docs/item18.md">상속보다는 컴포지션을 사용하라</a></li>
+    <br>
+    <li><a href="docs/item19.md">상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라</a></li>
 </ul>
 
 
