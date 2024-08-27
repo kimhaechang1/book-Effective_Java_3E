@@ -42,6 +42,8 @@
     <li><a href="docs/item18.md">상속보다는 컴포지션을 사용하라</a></li>
     <br>
     <li><a href="docs/item19.md">상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라</a></li>
+    <br>
+    <li><a href="docs/item20.md">추상 클래스보다는 인터페이스를 우선하라.</a></li>
 </ul>
 
 
